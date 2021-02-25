@@ -1,0 +1,17 @@
+{
+  "projectName": "rego",
+  "version": "3.0",
+  "frontend": "javascript",
+  "javascript": {
+    "framework": "react-native",
+    "config": {
+      "SourceDir": "/",
+      "DistributionDir": "/",
+      "BuildCommand": "npm react-native build",
+      "StartCommand": "npm react-native start"
+    }
+  },
+  "providers": [
+    "awscloudformation"
+  ]
+}
