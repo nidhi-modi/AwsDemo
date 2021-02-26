@@ -27,25 +27,6 @@ let io = require ('socket.io')(server)*/
   server.listen(port, () => {console.log("server is running at " + port)})
 }*/
 
-const express = require("express");
-const bodyParser = require("body-parser");
-const cors = require("cors");
-const Pool = require("pg").Pool;
-const pool = new Pool({
-  user: 'postgres',
-  host: 'database-1.ckw2c4zzgdfy.ap-southeast-2.rds.amazonaws.com',
-  database: 'postgres',
-  password: 'DZsfx3UCIoBtx40cFghQ',
-  port: 5432,
-});
-const app = express();
-
-app.use(cors());
-app.use(bodyParser.json());
-
-app.listen(8000, () => {
-  console.log(`Server is running.`);
-});
 
 export default class App extends React.Component {
   state = {
